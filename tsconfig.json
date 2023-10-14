@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",       // Specify the ECMAScript target version
+      "module": "CommonJS",     // Specify the module system (CommonJS, ES6, etc.)
+      "outDir": "./dist",       // Output directory for compiled files
+      "rootDir": "./src",       // Root directory of your source files
+      "strict": true,           // Enable strict type checking
+      "esModuleInterop": true,  // Allow default imports from CommonJS modules
+      "forceConsistentCasingInFileNames": true,  // Enforce consistent file naming
+      "noImplicitAny": true,    // Disallow implicit 'any' types
+      "moduleResolution": "Node",  // Specify module resolution strategy (Node or Classic)
+      "baseUrl": "./",          // Base directory to resolve non-relative module names
+      "paths": {
+        "*": ["src/*"]          // Path mapping for module resolution
+      },
+      "jsx": "react",           // Specify JSX target (react, preserve, react-native)
+    },
+    "include": ["src/**/*.ts", "src/**/*.tsx"],  // Files to include in compilation
+    "exclude": ["node_modules"]  // Files or directories to exclude from compilation
+  }
+  
